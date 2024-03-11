@@ -1,0 +1,257 @@
+/* c a b e ç a l h o */
+/* estilos do cabeçalho */
+.cabecalho {
+    font-family: 'Montserrat', sans-serif; /* fonte*/
+    background-color: rgb(15, 15, 15);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;    /* espaçamento entre os itens do cabeçalho e as bordas verticais*/
+}
+
+/* estilos do logo */
+.logo img {
+    width: 55px; /* tamanho da imagem */
+    margin-left: 70px; /* espaçamento entre a logo e a lateral esquerda do cabeçalho*/
+    margin-right: 500px;
+}
+
+/* estilos da navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* espaços entre as opções do cabeçalho */
+nav li {
+    margin-right: 45px;
+}
+
+/* letra das opções do cabeçalho*/
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* animação ao passar o mouse*/
+nav a:hover {
+    color: rgb(100, 100, 100);
+}
+
+.redes-sociais {
+    display: flex;
+    margin-top: 5px; /* espaçamento entre os icones e o topo do cabeçalho */
+}
+
+.redes-sociais a {
+    color: #ffffff;
+    margin-right: 45px; /* espaçamento entre os ícones */
+    font-size: 25px; /* ajuste conforme necessário para o tamanho dos ícones */
+    transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: rgb(100, 100, 100);
+}
+
+
+
+/* c o r p o*/
+body {
+    background-color: #f1f1f1;
+    color: black;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.card {
+    background-color: #ffffff;
+    display: flex; /* usa o modelo de layout flexível */
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-bottom: 80px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-content {
+    flex: 1; /* ocupa o restante do espaço disponível */
+    padding-right: 50px; /* distancia entre o conteúdo e a lateral direita */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center; /* centralize o texto no interior do card */
+}
+
+h2 {
+    margin-bottom: 30px; /* altura do card*/
+    color: #333;
+}
+
+p {
+    color: #666;
+    text-indent: 5px; /* adicione o recuo desejado aqui */
+
+}
+
+
+.card-email {
+    background-color: #ffffff;
+    display: flex; /* usa o modelo de layout flexível */
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-left: 15%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-content-email {
+    flex: 1; /* ocupa o restante do espaço disponível */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center; /* centralize o texto no interior do card */
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 30px; /* altura do card*/
+    color: #333;
+}
+
+p {
+    color: #666;
+    text-indent: 5px; /* adicione o recuo desejado aqui */
+
+}
+
+
+.card-teste {
+    display: flex; /* usa o modelo de layout flexível */
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-left: 5%;
+    border: 0.5px solid rgb(209, 209, 209);
+}
+
+
+.aviso {
+    color: rgb(182, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+
+footer {
+    background-color: rgb(15, 15, 15); /* cor de fundo do rodapé */
+    color: #fff; /* cor do texto no rodapé */
+    padding: 20px; /* espaçamento interno no rodapé */
+    text-align: center; /* alinhamento do texto no centro */
+}
+
+
+/* barra de rolagem*/
+html ::-webkit-scrollbar {
+    width: 8px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    background: rgb(15, 15, 15);
+    border-radius: 1000px;
+    
+  }
+  html ::-webkit-scrollbar-track {
+    background: rgb(194, 194, 194);
+  }
+
+
+
+label {
+    display: block;
+    margin-bottom: 2%;
+}
+
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    height: 100px;
+}
+
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    width: 150px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+button:active {
+    background-color: rgb(15, 15, 15); /* cor de fundo enquanto o botão está sendo clicado */
+}
+
+
+/* estilo do botão de rolar para o topo */
+#btn-top {
+    display: none;
+    position: fixed;
+    bottom: 23px; /* defina a posição vertical desejada, pode ajustar conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; /* ajuste a largura conforme necessário */
+    height: 40px; /* ajuste a altura conforme necessário */
+    border-radius: 50%; /* configura a borda para torná-lo uma esfera */
+    background-image: url('imgs/btn2.png'); /* Substitua com o caminho correto para sua imagem */
+    background-size: cover; /* ajusta o tamanho da imagem para cobrir todo o botão */
+    background-position: center; /* centraliza a imagem no botão */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-top:hover {
+    background-color: rgb(100, 100, 100); /* cor de fundo ao passar o mouse */
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contato.css"> <!-- Esta linha vincula o arquivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/icone.ico">
+    <title>Contato</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <div class="cabecalho">
+        <div class="logo">
+            <a href="https://henrikysena.github.io/">
+                <img src="imgs/logo2.png" alt="Seu Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://henrikysena.github.io/">Início</a></li>
+                <li><a href="https://henrikysena.github.io/sobre">Sobre</a></li>
+                <li><a href="https://henrikysena.github.io/portfolio">Portfólio</a></li>
+                <li><a href="https://henrikysena.github.io/contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- icones e links para as redes sociais -->
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/henriky-sena-643010234/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/henriky_sena/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/henrikySena" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Me mande um e-mail!</h2>
+            <p> Caso queria entrar em contato comigo, sinta-se a vontade em me enviar um email abaixo!
+            </p>
+        </div>
+    </div>
+
+    <div class="card-email">
+        <div class="card-content-email">
+                <form action="https://formsubmit.co/henriky.sena55@gmail.com" method="POST">
+                    <div class="formulario">
+                        <label for="email">Seu e-mail:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="message">Mensagem que deseja enviar:</label>
+                        <input type="text" name="message" id="message" required>
+                        <input type="hidden" name="_next" value="https://henrikysena.github.io/agradecimento.html">
+                    </div>
+                    <div class="botao">
+                        <button type="submit">Enviar</button>   
+                    </div>             
+                </form>                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-teste"></div>
+
+    <h3 class="aviso">Obrigado pela visita!</h3>
+
+    
+    <!-- botão para rolagem até o topo-->
+    <button id="btn-top"></button>
+
+    <!-- rodapé -->
+    <footer></footer>
+</body>
+<script>
+    // ROLAGEM SUAVE PARA O TOPO:
+    // adiciona um ouvinte de evento ao botão com o ID 'btn-top'
+    // ouvinte de evento é uma função que espera um evento ocorrer
+    document.getElementById('btn-top').addEventListener('click', function() {
+        // quando o botão é clicado, chama a função 'scrollToTop'
+        scrollToTop();
+    });
+
+    // adiciona um ouvinte de evento para quando o usuário rolar a página
+    window.onscroll = function() {
+        // obtém o elemento do botão
+        var btnTop = document.getElementById("btn-top");
+
+        // verifica se a posição de rolagem do corpo ou da página é maior que 20 pixels
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            // se sim, exibe o botão
+            btnTop.style.display = "block";
+        } else {
+            // se não, oculta o botão
+            btnTop.style.display = "none";
+        }
+    };
+
+
+    // função para rolar suavemente até o topo da página
+    function scrollToTop() {
+        // obtém a posição de rolagem atual do documento
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // se a posição de rolagem for maior que 0, realiza a animação de rolagem suave
+        if (currentScroll > 0) {
+            // solicita uma animação de quadro ao navegador para suavizar a rolagem
+            window.requestAnimationFrame(scrollToTop);
+            // realiza a rolagem para o topo com uma animação
+            window.scrollTo(0, currentScroll - currentScroll / 8);
+        }
+    }
+</script>
+</html>
